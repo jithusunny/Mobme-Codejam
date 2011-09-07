@@ -1,0 +1,13 @@
+Design
+------
+	The program uses Python Imaging Library(PIL) for image manipulation. The images are made even(resolution) & pixels are compared & difference is found out. The rms(magnitude) value of each of these difference is calculated to find out how similar the images are.
+
+
+Dependencies
+------------
+Python 2.x
+
+
+Usage
+-----
+$ python mirror.py
