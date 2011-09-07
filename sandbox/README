@@ -1,0 +1,18 @@
+Problem
+-------
+
+Write a simple TCP server that supports the following commands:
+
+    list - Lists all the files in the directory the server is running on.
+
+    pwd - Print the path of the directory the server is running on.
+
+    cat <filename> - Print the contents of the filename given as argument.
+
+    rm <filename> - Delete the filename given as argument.
+
+    touch <filename> <content> - Create a file with name and content given as argument.
+
+    time - Returns the current time on the server.
+
+Also implement a simple client program that uses this server. The client must create a file every minute on the server with a random filename and with the content being the current server time.

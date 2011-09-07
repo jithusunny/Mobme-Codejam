@@ -1,0 +1,27 @@
+Problem
+-------
+Write a number generator that keeps printing out 10 digit numbers, one in each line. Write a second program called filter that takes the output of this number generator and filters it based on its first digit: if the first digit starts with 0, write it to a file named 0.txt, if the first digit is 1, write it to a file named 1.txt, and so on. Write a third program that when run keeps a watch on these files and prints out the count of numbers in these files every second.
+
+Note: We are looking for three separate programs here.
+
+
+Solution Design
+---------------
+1) The number generator program - 'numgen.py' prints out random 10-digit numbers into 'stdout'.
+
+2) The filter program - 'filter.py' reads input from 'stdin' & stores it in corrensponding 'n.txt' file.
+
+    -Both 'numgen.py' & 'filter.py' can be executed simultaneously with output from 'numgen.py' going in as the input for 'filter.py' using UNIX pipe.
+
+3) The number-count-watcher program - 'countwatch.py' when run, checks and prints the number of numbers in each file in each second.
+
+Dependencies
+------------
+Python 2.x
+
+
+Usage
+-----
+To run the 'count-watcher' program - $ python countwatch.py
+
+The UNIX pipe can be used to run the 'number-generator' & 'filter' programs as required. $ python numgen.py | python filter.py

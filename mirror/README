@@ -1,0 +1,20 @@
+Problem
+-------
+Write a program which when given links to two images on the Internet, finds out how similar they are.
+
+Bonus points if it ranks images on a similarity scale from 0 - very different to 100 - exactly the same.
+
+
+Solution Design
+---------------
+	The program uses Python Imaging Library(PIL) for image manipulation. The images are made even(resolution) & pixels are compared & difference is found out. The rms(magnitude) value of each of these difference is calculated to find out how similar the images are.
+
+
+Dependencies
+------------
+Python 2.x
+
+
+Usage
+-----
+$ python mirror.py

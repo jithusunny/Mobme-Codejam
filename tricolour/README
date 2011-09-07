@@ -1,0 +1,20 @@
+Problem
+-------
+Write a program which will generate the Indian national flag. 
+
+
+Solution Design
+---------------
+	Python Image Library is used to draw the image. The user can input the required size of the flag.
+
+
+Dependencies
+------------
+        Python 2.x
+
+
+Usage
+-----
+        $ python tricolour.py
+
+Output image will be saved in the working directory with the name 'flag.jpg'.
